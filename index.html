@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <title>Photo Gallery</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<h3>
+    <div style="position:sticky;top:0;z-index:99999;background-color: azure;">
+        <div class="menu1" id="mynavbar1">
+            <span><a href="#home">HOME</a></span>
+            <span><a href="#grids">GRID VIEW</a></span>
+            <span><a href="#slides">SLIDE VIEW</a></span>
+            <span><a href="#contact">CONTACT</a></span>
+        </div>
+    </div>
+</h3>
+
+<body>
+    <div class="container">
+        <section id="home">
+            <h2>HOME</h2>
+            <br>
+            <img class="img_responsive" id="img1" src="https://cdn2.scratch.mit.edu/get_image/gallery/5064598_200x130.png">
+        </section>
+        <hr style="width:100%">
+        <section id="grids">
+            <h2>GRID GALLERY</h2>
+            <br>
+            <div class="row">
+                <img class="img2" src="HARRY%20POTTER.jpg">
+                <img class="img2" src="HAGRID.jpg">
+                <img class="img2" src="ALBUS%20DUMBLE%20DORE.jpg">
+                <img class="img2" src="HERMOINE%20GRANGER.jpg">
+                <br><br>
+            </div>
+            <div class="row">
+                <img class="img2" src="PROFFESER%20MACGONAGALL.jpg">
+                <img class="img2" src="RON%20WEASLEY.jpg">
+                <img class="img2" src="SNAPE.jpg">
+                <img class="img2" src="VOLDEMORT.jpg">
+                <br><br>
+            </div>
+            <br><br>
+        </section>
+        <!--left and right controls-->
+        <section id="slides">
+            <h2>SLIDING GALLERY</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!--indicator controls-->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                    <li data-target="#myCarousel" data-slide-to="7"></li>
+                </ol>
+                <!--content for slide-->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="img-responsive" src="HARRY%20POTTER.jpg" alt="harry potter" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>HARRY POTTER</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <img class="img-responsive" src="HERMOINE%20GRANGER.jpg" alt="hermoine granger" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>HERMOINE GRANGER</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <img class="img-responsive" src="ALBUS%20DUMBLE%20DORE.jpg" alt="albus dumbeldore" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>ALBUS DUMBELDORE</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <img class="img-responsive" src="HAGRID.jpg" alt="hagrid" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>HAGRID</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="PROFFESER%20MACGONAGALL.jpg" alt="proffeser macgonagall" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>PROFFESER MACGONAGALL</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="RON%20WEASLEY.jpg" alt="ron weasley" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>RON WAESLEY</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <img class="img-responsive" src="SNAPE.jpg" alt="snape" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>SNAPE</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <img class="img-responsive" src="VOLDEMORT.jpg" alt="voldemort" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>VOLDEMORT</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only"></span>
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
